@@ -1,0 +1,250 @@
+{
+  "created": "2026-11-10T11:46:43",
+  "calibration_file": "/home/felipe/cern/cnn-optimization/src/calibration/vu13p_hls4ml_synthesis.json",
+  "fitted_on": [
+    "u16",
+    "u8",
+    "kkt",
+    "mp_v1",
+    "mp_b10k"
+  ],
+  "coefficients": {
+    "beta_lut": 0.39450557617054705,
+    "gamma_lut": 1.325858416370629,
+    "beta_ff": 0.17052753740205542,
+    "delta_ff": 6.438400961029986
+  },
+  "predictions": {
+    "u16": {
+      "in_domain": true,
+      "in_sample": true,
+      "DSP": 1245.0,
+      "LUT": 29456.77788431382,
+      "FF": 17629.13991221489,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 500.0,
+          "LUT": 17803.448940519214,
+          "FF": 7017.701376145778,
+          "adder_bits": 22275.0,
+          "relu_bits": 6800.0,
+          "nonzero_frac": 1.0
+        },
+        "dense_1": {
+          "DSP": 737.0,
+          "LUT": 11547.6014493809,
+          "FF": 9557.81493260861,
+          "adder_bits": 28222.5,
+          "relu_bits": 312.0,
+          "nonzero_frac": 1.0
+        },
+        "output_dense": {
+          "DSP": 8.0,
+          "LUT": 105.72749441370661,
+          "FF": 97.20858771199073,
+          "adder_bits": 268.0,
+          "relu_bits": 0.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "u8": {
+      "in_domain": true,
+      "in_sample": true,
+      "DSP": 0.0,
+      "LUT": 23401.59985545821,
+      "FF": 8903.254049990399,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 12318.009443195977,
+          "FF": 3261.33915281431,
+          "adder_bits": 19125.0,
+          "relu_bits": 3600.0,
+          "nonzero_frac": 0.7916666666666666
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 10952.417308185526,
+          "FF": 4628.799475241392,
+          "adder_bits": 27144.0,
+          "relu_bits": 184.0,
+          "nonzero_frac": 0.9596354166666666
+        },
+        "output_dense": {
+          "DSP": 0.0,
+          "LUT": 131.1731040767069,
+          "FF": 56.70040618618343,
+          "adder_bits": 332.5,
+          "relu_bits": 0.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "kkt": {
+      "in_domain": true,
+      "in_sample": true,
+      "DSP": 0.0,
+      "LUT": 8363.38978335302,
+      "FF": 3104.379876864804,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 3832.9943999709126,
+          "FF": 281.3704367133914,
+          "adder_bits": 1650.0,
+          "relu_bits": 2400.0,
+          "nonzero_frac": 0.5
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 4371.606888973463,
+          "FF": 1797.9570905985713,
+          "adder_bits": 10543.5,
+          "relu_bits": 160.0,
+          "nonzero_frac": 0.6575520833333334
+        },
+        "output_dense": {
+          "DSP": 0.0,
+          "LUT": 158.7884944086452,
+          "FF": 68.63733380432731,
+          "adder_bits": 402.5,
+          "relu_bits": 0.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "kkt_pf1": {
+      "in_domain": false,
+      "in_sample": false,
+      "DSP": 0.0,
+      "LUT": 8363.38978335302,
+      "FF": 3104.379876864804,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 3832.9943999709126,
+          "FF": 281.3704367133914,
+          "adder_bits": 1650.0,
+          "relu_bits": 2400.0,
+          "nonzero_frac": 0.5
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 4371.606888973463,
+          "FF": 1797.9570905985713,
+          "adder_bits": 10543.5,
+          "relu_bits": 160.0,
+          "nonzero_frac": 0.6575520833333334
+        },
+        "output_dense": {
+          "DSP": 0.0,
+          "LUT": 158.7884944086452,
+          "FF": 68.63733380432731,
+          "adder_bits": 402.5,
+          "relu_bits": 0.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "mp_v1": {
+      "in_domain": true,
+      "in_sample": true,
+      "DSP": 8.0,
+      "LUT": 7320.228506483168,
+      "FF": 2594.936750268983,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 4512.396938224113,
+          "FF": 460.42435098554967,
+          "adder_bits": 2700.0,
+          "relu_bits": 2600.0,
+          "nonzero_frac": 0.6666666666666666
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 2714.728252282806,
+          "FF": 1086.345677019794,
+          "adder_bits": 6370.5,
+          "relu_bits": 152.0,
+          "nonzero_frac": 0.5403645833333334
+        },
+        "output_dense": {
+          "DSP": 8.0,
+          "LUT": 93.1033159762491,
+          "FF": 91.75170651512497,
+          "adder_bits": 236.0,
+          "relu_bits": 0.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "mp_b10k": {
+      "in_domain": true,
+      "in_sample": true,
+      "DSP": 8.0,
+      "LUT": 11355.20590919176,
+      "FF": 4215.289410663313,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 5122.761000647467,
+          "FF": 609.6359462123481,
+          "adder_bits": 3575.0,
+          "relu_bits": 2800.0,
+          "nonzero_frac": 0.625
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 6139.341592568045,
+          "FF": 2557.4867421873264,
+          "adder_bits": 14997.5,
+          "relu_bits": 168.0,
+          "nonzero_frac": 0.8463541666666666
+        },
+        "output_dense": {
+          "DSP": 8.0,
+          "LUT": 93.1033159762491,
+          "FF": 91.75170651512497,
+          "adder_bits": 236.0,
+          "relu_bits": 0.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "mp_final": {
+      "in_domain": true,
+      "in_sample": false,
+      "DSP": 8.0,
+      "LUT": 7892.917286382235,
+      "FF": 2727.862965673885,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 6020.261186435462,
+          "FF": 997.5860938020243,
+          "adder_bits": 5850.0,
+          "relu_bits": 2800.0,
+          "nonzero_frac": 0.75
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 1766.9286055330663,
+          "FF": 676.653268411356,
+          "adder_bits": 3968.0,
+          "relu_bits": 152.0,
+          "nonzero_frac": 0.3268229166666667
+        },
+        "output_dense": {
+          "DSP": 8.0,
+          "LUT": 105.72749441370661,
+          "FF": 97.20858771199073,
+          "adder_bits": 268.0,
+          "relu_bits": 0.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "origin": "integer weight codes of point 'mp_final' in /home/felipe/cern/cnn-optimization/src/calibration/vu13p_hls4ml_synthesis.json",
+  "note": "exact: the codes are the quantized weights that were synthesized",
+  "config": "mp_v1",
+  "w_bits": {
+    "conv1d_1": 3,
+    "dense_1": 4,
+    "output_dense": 16
+  },
+  "a_bits": {
+    "conv1d_1": 8,
+    "dense_1": 12
+  },
+  "input_bits": 8,
+  "frozen_file": "results/mp_v1/source_weights.weights.h5",
+  "frozen_sha256": "4b1ad732d9a686315752009633790dd4456c7a7c4bd5139f6b43bc2be7f21390",
+  "imported": "2026-11-10T11:46:16"
+}

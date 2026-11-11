@@ -1,0 +1,198 @@
+{
+  "created": "2026-11-10T11:25:00",
+  "calibration_file": "/home/felipe/cern/cnn-optimization/src/calibration/vu13p_hls4ml_synthesis.json",
+  "fitted_on": [
+    "u16",
+    "u8",
+    "kkt"
+  ],
+  "coefficients": {
+    "beta_lut": 0.5450078028337133,
+    "gamma_lut": 0.0,
+    "beta_ff": 0.19614710154972492,
+    "delta_ff": 6.16184282431923
+  },
+  "predictions": {
+    "u16": {
+      "in_domain": true,
+      "in_sample": true,
+      "DSP": 1245.0,
+      "LUT": 27667.593614754875,
+      "FF": 17629.000000000004,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 500.0,
+          "LUT": 12140.048808120964,
+          "FF": 7450.098099179738,
+          "adder_bits": 22275.0,
+          "nonzero_frac": 1.0
+        },
+        "dense_1": {
+          "DSP": 737.0,
+          "LUT": 15381.482715474474,
+          "FF": 10077.039735010385,
+          "adder_bits": 28222.5,
+          "nonzero_frac": 1.0
+        },
+        "output_dense": {
+          "DSP": 8.0,
+          "LUT": 146.06209115943517,
+          "FF": 101.86216580988011,
+          "adder_bits": 268.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "u8": {
+      "in_domain": true,
+      "in_sample": true,
+      "DSP": 0.0,
+      "LUT": 25398.18112375529,
+      "FF": 9140.749152869506,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 10423.274229194767,
+          "FF": 3751.3133171384893,
+          "adder_bits": 19125.0,
+          "nonzero_frac": 0.7916666666666666
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 14793.691800118315,
+          "FF": 5324.216924465733,
+          "adder_bits": 27144.0,
+          "nonzero_frac": 0.9596354166666666
+        },
+        "output_dense": {
+          "DSP": 0.0,
+          "LUT": 181.21509444220968,
+          "FF": 65.21891126528354,
+          "adder_bits": 332.5,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "kkt": {
+      "in_domain": true,
+      "in_sample": true,
+      "DSP": 0.0,
+      "LUT": 6864.918284493453,
+      "FF": 2470.668891120335,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 899.2628746756269,
+          "FF": 323.6427175570461,
+          "adder_bits": 1650.0,
+          "nonzero_frac": 0.5
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 5746.289769177256,
+          "FF": 2068.076965189525,
+          "adder_bits": 10543.5,
+          "nonzero_frac": 0.6575520833333334
+        },
+        "output_dense": {
+          "DSP": 0.0,
+          "LUT": 219.3656406405696,
+          "FF": 78.94920837376428,
+          "adder_bits": 402.5,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "kkt_pf1": {
+      "in_domain": false,
+      "in_sample": false,
+      "DSP": 0.0,
+      "LUT": 6864.918284493453,
+      "FF": 2470.668891120335,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 899.2628746756269,
+          "FF": 323.6427175570461,
+          "adder_bits": 1650.0,
+          "nonzero_frac": 0.5
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 5746.289769177256,
+          "FF": 2068.076965189525,
+          "adder_bits": 10543.5,
+          "nonzero_frac": 0.6575520833333334
+        },
+        "output_dense": {
+          "DSP": 0.0,
+          "LUT": 219.3656406405696,
+          "FF": 78.94920837376428,
+          "adder_bits": 402.5,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "mp_b10k": {
+      "in_domain": true,
+      "in_sample": false,
+      "DSP": 8.0,
+      "LUT": 10250.779259597895,
+      "FF": 3738.5275020925546,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 1948.4028951305252,
+          "FF": 701.2258880402666,
+          "adder_bits": 3575.0,
+          "nonzero_frac": 0.625
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 8173.754522998615,
+          "FF": 2941.7161554919994,
+          "adder_bits": 14997.5,
+          "nonzero_frac": 0.8463541666666666
+        },
+        "output_dense": {
+          "DSP": 8.0,
+          "LUT": 128.62184146875634,
+          "FF": 95.58545856028891,
+          "adder_bits": 236.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    },
+    "mp_v1": {
+      "in_domain": true,
+      "in_sample": false,
+      "DSP": 8.0,
+      "LUT": 5072.115117071953,
+      "FF": 1874.7377431670689,
+      "per_layer": {
+        "conv1d_1": {
+          "DSP": 0.0,
+          "LUT": 1471.521067651026,
+          "FF": 529.5971741842573,
+          "adder_bits": 2700.0,
+          "nonzero_frac": 0.6666666666666666
+        },
+        "dense_1": {
+          "DSP": 0.0,
+          "LUT": 3471.9722079521707,
+          "FF": 1249.5551104225226,
+          "adder_bits": 6370.5,
+          "nonzero_frac": 0.5403645833333334
+        },
+        "output_dense": {
+          "DSP": 8.0,
+          "LUT": 128.62184146875634,
+          "FF": 95.58545856028891,
+          "adder_bits": 236.0,
+          "nonzero_frac": 1.0
+        }
+      }
+    }
+  },
+  "note": "round 1: model fitted on 3 points; 'mp_v1' was called 'mp_final' when these predictions were frozen"
+}

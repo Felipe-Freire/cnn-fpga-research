@@ -1,0 +1,21 @@
+{
+  "estimated_clock_ns": 3.04,
+  "latency_best_cycles": 9,
+  "latency_worst_cycles": 9,
+  "interval_min_cycles": 1,
+  "interval_max_cycles": 1,
+  "resources": {
+    "BRAM_18K": 1,
+    "DSP": 0,
+    "FF": 3032,
+    "LUT": 25946,
+    "URAM": 0
+  },
+  "available": {
+    "BRAM_18K": 5376,
+    "DSP": 12288,
+    "FF": 3456000,
+    "LUT": 1728000,
+    "URAM": 1280
+  }
+}

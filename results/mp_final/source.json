@@ -1,0 +1,18 @@
+{
+  "origin": "/home/felipe/cern/cnn-optimization/results/mc21_13p6TeV.Zee.JF17.2sigma.5M/QCNN1D_KKT/iet5/ieta0/v2/saved_models/best_model.keras",
+  "origin_sha256": "fc5bfaa8a170207785b638e920a6110199c224228f8fb171c0869722e0703a4d",
+  "config": "mp_final",
+  "w_bits": {
+    "conv1d_1": 4,
+    "dense_1": 4,
+    "output_dense": 16
+  },
+  "a_bits": {
+    "conv1d_1": 8,
+    "dense_1": 16
+  },
+  "input_bits": 8,
+  "frozen_file": "results/mp_final/source_weights.weights.h5",
+  "frozen_sha256": "c5faf7c34346e945556c559a5a731b449490cd68aab1a585076324b2b0cd3c59",
+  "imported": "2026-11-10T11:46:18"
+}

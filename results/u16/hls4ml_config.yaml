@@ -1,0 +1,95 @@
+Model:
+  Precision:
+    default: fixed<16,6>
+  ReuseFactor: 1
+  Strategy: Latency
+  BramFactor: 1000000000
+  TraceOutput: false
+  BitExact: null
+LayerName:
+  input_rings:
+    Trace: false
+    Precision:
+      result: ufixed<16,0>
+  input_quant:
+    Trace: false
+    Precision:
+      result: ufixed<16,0,RND_CONV,SAT>
+    ReuseFactor: 1
+    TableSize: 1024
+  reshape_1d:
+    Trace: false
+    Precision:
+      result: auto
+  conv1d_1:
+    Trace: false
+    Precision:
+      result: auto
+      weight: fixed<16,3,TRN,WRAP,0>
+      bias: fixed<16,3,TRN,WRAP,0>
+      accum: auto
+    ReuseFactor: 1
+    ParallelizationFactor: 25
+    ConvImplementation: LineBuffer
+  conv1d_1_linear:
+    Trace: false
+    Precision:
+      result: auto
+      table: fixed<18,8,TRN,WRAP,0>
+    ReuseFactor: 1
+    TableSize: 1024
+  relu_conv1:
+    Trace: false
+    Precision:
+      result: ufixed<16,2,RND_CONV,SAT,0>
+      table: fixed<18,8,TRN,WRAP,0>
+    ReuseFactor: 1
+    TableSize: 1024
+  maxpool_1:
+    Trace: false
+    Precision:
+      result: auto
+      accum: auto
+    ReuseFactor: 1
+    ConvImplementation: LineBuffer
+  flatten_1:
+    Trace: false
+    Precision:
+      result: auto
+  dense_1:
+    Trace: false
+    Precision:
+      result: auto
+      weight: fixed<16,3,TRN,WRAP,0>
+      bias: fixed<16,3,TRN,WRAP,0>
+      accum: auto
+    ReuseFactor: 1
+  dense_1_linear:
+    Trace: false
+    Precision:
+      result: auto
+      table: fixed<18,8,TRN,WRAP,0>
+    ReuseFactor: 1
+    TableSize: 1024
+  relu_dense1:
+    Trace: false
+    Precision:
+      result: ufixed<16,2,RND_CONV,SAT,0>
+      table: fixed<18,8,TRN,WRAP,0>
+    ReuseFactor: 1
+    TableSize: 1024
+  output_dense:
+    Trace: false
+    Precision:
+      result: auto
+      weight: fixed<16,3,TRN,WRAP,0>
+      bias: fixed<16,3,TRN,WRAP,0>
+      accum: auto
+    ReuseFactor: 1
+  output_dense_sigmoid:
+    Trace: false
+    Precision:
+      result: auto
+      table: fixed<18,8,TRN,WRAP,0>
+    ReuseFactor: 1
+    TableSize: 1024

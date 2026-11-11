@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1.1 (lin64) Build 6605303 Fri Sep 04 05:45:32 MDT 2026
+| Date         : Mon Nov  9 23:20:46 2026
+| Host         : ubuntu running 64-bit Ubuntu 26.04.1 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file /home/felipe/cern/cnn-fpga-research/results/kkt/vivado/post_synth_util_hier.rpt
+| Design       : qcnn1d
+| Device       : xcvu13p-flga2577-2-e
+| Speed File   : -2
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|                                      Instance                                     |                                  Module                                 | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-----------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| qcnn1d                                                                            |                                                                   (top) |       7241 |       7241 |       0 |    0 | 2983 |      0 |      1 |    0 |          0 |
+|   (qcnn1d)                                                                        |                                                                   (top) |       2891 |       2891 |       0 |    0 | 1983 |      0 |      0 |    0 |          0 |
+|   call_ret4_pooling1d_cl_ap_ufixed_8_2_4_0_0_ap_ufixed_8_2_4_0_0_config7_s_fu_240 |   qcnn1d_pooling1d_cl_ap_ufixed_8_2_4_0_0_ap_ufixed_8_2_4_0_0_config7_s |        288 |        288 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   grp_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_20_9_5_3_0_config12_s_fu_476     | qcnn1d_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_20_9_5_3_0_config12_s |        216 |        216 |       0 |    0 |   48 |      0 |      0 |    0 |          0 |
+|     (grp_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_20_9_5_3_0_config12_s_fu_476) | qcnn1d_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_20_9_5_3_0_config12_s |        117 |        117 |       0 |    0 |   48 |      0 |      0 |    0 |          0 |
+|   grp_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_21_13_5_3_0_config9_s_fu_388     | qcnn1d_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_21_13_5_3_0_config9_s |       3827 |       3827 |       0 |    0 |  941 |      0 |      0 |    0 |          0 |
++-----------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+
+

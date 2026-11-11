@@ -1,0 +1,57 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1.1 (lin64) Build 6605303 Fri Sep 04 05:45:32 MDT 2026
+| Date         : Mon Nov  9 23:22:25 2026
+| Host         : ubuntu running 64-bit Ubuntu 26.04.1 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file /home/felipe/cern/cnn-fpga-research/results/u8/vivado/post_synth_util_hier.rpt
+| Design       : qcnn1d
+| Device       : xcvu13p-flga2577-2-e
+| Speed File   : -2
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|                                      Instance                                     |                                  Module                                 | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-----------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| qcnn1d                                                                            |                                                                   (top) |      24233 |      24233 |       0 |    0 | 9001 |      0 |      1 |    0 |          0 |
+|   (qcnn1d)                                                                        |                                                                   (top) |       4517 |       4517 |       0 |    0 | 5366 |      0 |      0 |    0 |          0 |
+|   call_ret6_relu_ap_fixed_24_13_5_3_0_ap_ufixed_8_2_4_0_0_relu_config11_s_fu_584  |    qcnn1d_relu_ap_fixed_24_13_5_3_0_ap_ufixed_8_2_4_0_0_relu_config11_s |        165 |        165 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   grp_conv_1d_cl_ap_ufixed_8_0_4_0_0_ap_fixed_19_6_5_3_0_config4_s_fu_63          |     qcnn1d_conv_1d_cl_ap_ufixed_8_0_4_0_0_ap_fixed_19_6_5_3_0_config4_s |       7212 |       7212 |       0 |    0 |  777 |      0 |      0 |    0 |          0 |
+|     (grp_conv_1d_cl_ap_ufixed_8_0_4_0_0_ap_fixed_19_6_5_3_0_config4_s_fu_63)      |     qcnn1d_conv_1d_cl_ap_ufixed_8_0_4_0_0_ap_fixed_19_6_5_3_0_config4_s |       2829 |       2829 |       0 |    0 |  777 |      0 |      0 |    0 |          0 |
+|   grp_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_20_9_5_3_0_config12_s_fu_596     | qcnn1d_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_20_9_5_3_0_config12_s |        185 |        185 |       0 |    0 |   45 |      0 |      0 |    0 |          0 |
+|     (grp_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_20_9_5_3_0_config12_s_fu_596) | qcnn1d_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_20_9_5_3_0_config12_s |         71 |         71 |       0 |    0 |   45 |      0 |      0 |    0 |          0 |
+|     mul_8ns_7s_15_1_1_U816                                                        |                                            qcnn1d_mul_8ns_7s_15_1_1_120 |         53 |         53 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   grp_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_24_13_5_3_0_config9_s_fu_484     | qcnn1d_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_24_13_5_3_0_config9_s |      12135 |      12135 |       0 |    0 | 2802 |      0 |      0 |    0 |          0 |
+|     (grp_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_24_13_5_3_0_config9_s_fu_484) | qcnn1d_dense_latency_ap_ufixed_8_2_4_0_0_ap_fixed_24_13_5_3_0_config9_s |       8186 |       8186 |       0 |    0 | 2802 |      0 |      0 |    0 |          0 |
+|     mul_8ns_5ns_12_1_1_U646                                                       |                                             qcnn1d_mul_8ns_5ns_12_1_1_0 |         65 |         65 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_5ns_12_1_1_U690                                                       |                                             qcnn1d_mul_8ns_5ns_12_1_1_2 |         67 |         67 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_5s_13_1_1_U632                                                        |                                              qcnn1d_mul_8ns_5s_13_1_1_6 |         64 |         64 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U592                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_16 |         50 |         50 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U601                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_22 |         62 |         62 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U605                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_26 |         61 |         61 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U639                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_41 |         99 |         99 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U658                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_52 |         55 |         55 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U659                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_53 |         65 |         65 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U660                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_54 |         61 |         61 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U669                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_59 |         58 |         58 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U684                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_69 |         54 |         54 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U687                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_70 |         61 |         61 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6ns_13_1_1_U703                                                       |                                            qcnn1d_mul_8ns_6ns_13_1_1_80 |         57 |         57 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6s_14_1_1_U625                                                        |                                             qcnn1d_mul_8ns_6s_14_1_1_89 |         50 |         50 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6s_14_1_1_U627                                                        |                                             qcnn1d_mul_8ns_6s_14_1_1_90 |         64 |         64 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_6s_14_1_1_U631                                                        |                                             qcnn1d_mul_8ns_6s_14_1_1_91 |         62 |         62 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_7ns_14_1_1_U610                                                       |                                           qcnn1d_mul_8ns_7ns_14_1_1_101 |         53 |         53 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_7ns_14_1_1_U664                                                       |                                           qcnn1d_mul_8ns_7ns_14_1_1_107 |         51 |         51 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mul_8ns_7ns_14_1_1_U686                                                       |                                           qcnn1d_mul_8ns_7ns_14_1_1_111 |         77 |         77 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
++-----------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+
+

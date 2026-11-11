@@ -1,0 +1,28 @@
+{
+  "post_synth": {
+    "LUT": 30508,
+    "LUT_logic": 30508,
+    "LUT_memory": 0,
+    "FF": 17562,
+    "CARRY8": 3895,
+    "BRAM_tile": 0.5,
+    "RAMB36": 0,
+    "RAMB18": 1,
+    "URAM": 0,
+    "DSP": 1241
+  },
+  "post_synth_wns_ns": 0.748,
+  "post_route": {
+    "LUT": 29571,
+    "LUT_logic": 29571,
+    "LUT_memory": 0,
+    "FF": 17629,
+    "CARRY8": 3895,
+    "BRAM_tile": 0.5,
+    "RAMB36": 0,
+    "RAMB18": 1,
+    "URAM": 0,
+    "DSP": 1241
+  },
+  "post_route_wns_ns": 0.231
+}

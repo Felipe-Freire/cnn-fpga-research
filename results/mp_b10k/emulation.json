@@ -1,0 +1,7 @@
+{
+  "max_abs_diff": 0.0047643184661865234,
+  "mean_abs_diff": 0.0006473648245446384,
+  "decision_agreement_at_qkeras_knee": 0.9994165694282381,
+  "sp_qkeras_holdout": 0.9786605359330687,
+  "sp_hls_holdout": 0.9785959339112629
+}

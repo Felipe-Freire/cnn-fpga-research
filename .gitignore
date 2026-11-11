@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Trained models / datasets (regenerable with model/train.py)
+model/artifacts/
+data/
+*.h5
+!results/*/source_weights.weights.h5
+*.keras
+
+# hls4ml / Vitis HLS / Vivado working directories (regenerable with hls4ml/build_hls.py)
+hls4ml/projects/
+*.jou
+*.log
+*.str
+.Xil/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
